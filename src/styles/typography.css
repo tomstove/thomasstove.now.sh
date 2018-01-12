@@ -1,0 +1,82 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.9rem;
+  line-height: 1.6;
+  font-weight: 300;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  color: var(--oc-black);
+}
+
+h1 {
+  font-weight: 500;
+  letter-spacing: -.15rem;
+}
+
+h3 {
+  font-weight: 100;
+  letter-spacing:-.05rem;
+}
+
+h2, h4, h5, h6 {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+}
+
+h1 { font-size: 2.8rem; line-height: 1.1;}
+h2 { font-size: 2.4rem; line-height: 1.2;}
+h3 { font-size: 2.4rem; line-height: 1.3;}
+h4 { font-size: 2.4rem; line-height: 1.35;}
+h5 { font-size: 1.8rem; line-height: 1.5;}
+h6 { font-size: 1.5rem; line-height: 1.6;}
+
+p {
+  margin-top: 0;
+}
+
+p.small {
+  font-size: 1rem;
+}
+
+a {
+  color: var(--oc-black);
+  border-bottom: 1px solid var(--oc-black);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  border-bottom: 1px solid var(--oc-white);
+  transition:.5s;
+}
+
+footer a {
+  border-bottom: 1px solid var(--oc-white);
+}
+
+footer a:hover {
+  color: var(--oc-black);
+  border-bottom: 1px solid var(--oc-black);
+  transition: 1s;
+}
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+  h1 { font-size: 3.4rem; line-height: 1.2;}
+  h2 { font-size: 2.4rem; }
+  h3 { font-size: 3.0rem; letter-spacing: -.1rem;}
+  h4 { font-size: 3.0rem; }
+  h5 { font-size: 2.4rem; }
+  h6 { font-size: 1.5rem; }
+
+  p.small {
+    font-size: 1.2rem;
+  }
+}
+
+#information {
+  color: var(--oc-white);
+}

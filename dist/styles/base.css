@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--oc-white);
+  box-sizing: border-box;
+}
+
+hr {
+  margin-bottom: 6rem;
+  border-width: 0;
+  border-top: 2px solid #000;
+  width:40px;
+  text-align:left;
+  margin-left:0;
+}
+
+#information hr {
+  border-top: 2px solid var(--oc-white);
+}
+
+hr.f {
+  margin: 3rem auto;
+  border-width: 0;
+  border-top: 1px solid #000;
+  width: 960px;
+  text-align: left;
+}
+
+@media (max-width: 1000px) {
+  hr.f {
+    width: 85%;
+  }
+}
