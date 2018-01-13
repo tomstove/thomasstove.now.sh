@@ -1,5 +1,18 @@
 'use strict';
 
+// GA event logging
+document.getElementById('email').addEventListener('click', function(e) {
+	ga('send', 'event', 'Link Clicked', 'Email');
+});
+
+document.getElementById('facebook').addEventListener('click', function(e) {
+	ga('send', 'event', 'Link Clicked', 'Facebook');
+});
+
+document.getElementById('instagram').addEventListener('click', function(e) {
+	ga('send', 'event', 'Link Clicked', 'Instagram');
+});
+
 /**
 	Sheet functions
 */
@@ -30,18 +43,24 @@ var overlay = document.getElementById("overlay");
 document.getElementById('selectedWorks').addEventListener('click', function(e) {
 	//console.log(e);
 	showSheet('selectedWorksSheet');
+	// GA event logging
+	ga('send', 'event', 'Navigation Link Clicked', 'Selected Works');
 });
 
 // open sketchbookSheet
 document.getElementById('sketchbook').addEventListener('click', function(e) {
 	//console.log(e);
 	showSheet('sketchbookSheet');
+	// GA event logging
+	ga('send', 'event', 'Navigation Link Clicked', 'Sketchbook');
 });
 
 // open bioSheet
 document.getElementById('bio').addEventListener('click', function(e) {
 	//console.log(e);
 	showSheet('bioSheet');
+	// GA event logging
+	ga('send', 'event', 'Navigation Link Clicked', 'Biography');
 });
 
 // close selectedWorksSheet when worksCloseBtn is clicked

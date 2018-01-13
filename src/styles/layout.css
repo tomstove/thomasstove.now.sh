@@ -199,6 +199,10 @@ footer .footerLogo img {
     max-width: 85vw;
   }
 
+  #selectedWorksSheet .gridContainer, #sketchbookSheet .gridContainer, #bioSheet .gridContainer {
+    max-width: 85vw;
+  }
+
   #contact .gridContainer {
     max-width: 85vw;
   }
@@ -220,6 +224,10 @@ footer .footerLogo img {
   #services .gridContainer {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
+  }
+
+  #selectedWorksSheet .worksContainer, #sketchbookSheet .worksContainer {
+    grid-template-columns: 1fr;
   }
 
   #contact .gridContainer {
