@@ -43,14 +43,14 @@
 .sheet[effect="right"] {
 	right: 0;
 	left: auto;
-	width: 50%;
+	width: 800px;
 	min-height: 100%;
 }
 
 .sheet[effect="left"]  {
   left: 0;
   right: auto;
-	width: 50%;
+	width: 800px;
 	min-height: 100%;
 }
 
