@@ -1,18 +1,5 @@
 'use strict';
 
-// GA event logging
-document.getElementById('email').addEventListener('click', function(e) {
-	ga('send', 'event', 'Link Clicked', 'Email');
-});
-
-document.getElementById('facebook').addEventListener('click', function(e) {
-	ga('send', 'event', 'Link Clicked', 'Facebook');
-});
-
-document.getElementById('instagram').addEventListener('click', function(e) {
-	ga('send', 'event', 'Link Clicked', 'Instagram');
-});
-
 /**
 	Sheet functions
 */
@@ -23,10 +10,12 @@ function showSheet(el) {
 	overlay.classList.remove("hide");
 	overlay.classList.add("show");
 	document.body.classList.add("no-scroll");
+	element.classList.add("scroll");
 }
 
 function hideSheet(el) {
 	var element = document.getElementById(el);
+	element.classList.remove("scroll");
 	element.classList.add("hidden");
 	overlay.classList.remove("show");
 	overlay.classList.add("hideIt");
@@ -87,4 +76,17 @@ document.getElementById('overlay').addEventListener('click', function(e) {
 	hideSheet('selectedWorksSheet');
 	hideSheet('sketchbookSheet');
 	hideSheet('bioSheet');
+});
+
+// GA event logging
+document.getElementById('email').addEventListener('click', function(e) {
+	ga('send', 'event', 'Link Clicked', 'Email');
+});
+
+document.getElementById('facebook').addEventListener('click', function(e) {
+	ga('send', 'event', 'Link Clicked', 'Facebook');
+});
+
+document.getElementById('instagram').addEventListener('click', function(e) {
+	ga('send', 'event', 'Link Clicked', 'Instagram');
 });

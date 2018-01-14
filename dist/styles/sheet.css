@@ -8,8 +8,7 @@
 	left: 0;
 	right: 0;
 	bottom: 0;
-  background: white;
-	overflow: scroll;
+  background: var(--oc-white);
 	padding: 2%;
 	padding-top: 2%;
 }
@@ -117,6 +116,11 @@
 
 .no-scroll {
 	overflow: hidden;
+}
+
+.scroll {
+	overflow-y: scroll;
+	-webkit-overflow-y: scroll;
 }
 
 .sheet i {
