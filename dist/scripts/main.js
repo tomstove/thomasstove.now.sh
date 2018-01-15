@@ -32,24 +32,30 @@ var overlay = document.getElementById("overlay");
 document.getElementById('selectedWorks').addEventListener('click', function(e) {
 	//console.log(e);
 	showSheet('selectedWorksSheet');
-	// GA event logging
-	ga('send', 'event', 'Navigation Link Clicked', 'Selected Works');
+	// GTAG.js event logging
+	gtag('event', 'navigation_link', {
+		'screen': 'Selected Works'
+	});
 });
 
 // open sketchbookSheet
 document.getElementById('sketchbook').addEventListener('click', function(e) {
 	//console.log(e);
 	showSheet('sketchbookSheet');
-	// GA event logging
-	ga('send', 'event', 'Navigation Link Clicked', 'Sketchbook');
+	// GTAG.js event logging
+	gtag('event', 'navigation_link', {
+		'screen': 'Sketchbook'
+	});
 });
 
 // open bioSheet
 document.getElementById('bio').addEventListener('click', function(e) {
 	//console.log(e);
 	showSheet('bioSheet');
-	// GA event logging
-	ga('send', 'event', 'Navigation Link Clicked', 'Biography');
+	// GTAG.js event logging
+	gtag('event', 'navigation_link', {
+		'screen': 'Biography'
+	});
 });
 
 // close selectedWorksSheet when worksCloseBtn is clicked
@@ -78,15 +84,21 @@ document.getElementById('overlay').addEventListener('click', function(e) {
 	hideSheet('bioSheet');
 });
 
-// GA event logging
+// GTAG.js event logging
 document.getElementById('email').addEventListener('click', function(e) {
-	ga('send', 'event', 'Link Clicked', 'Email');
+	gtag('event', 'external_link', {
+		'target': 'Email'
+	});
 });
 
 document.getElementById('facebook').addEventListener('click', function(e) {
-	ga('send', 'event', 'Link Clicked', 'Facebook');
+	gtag('event', 'external_link', {
+		'target': 'Facebook'
+	});
 });
 
 document.getElementById('instagram').addEventListener('click', function(e) {
-	ga('send', 'event', 'Link Clicked', 'Instagram');
+	gtag('event', 'external_link', {
+		'target': 'Instagram'
+	});
 });
