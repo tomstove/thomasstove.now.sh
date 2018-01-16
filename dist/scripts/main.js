@@ -34,7 +34,8 @@ document.getElementById('selectedWorks').addEventListener('click', function(e) {
 	showSheet('selectedWorksSheet');
 	// GTAG.js event logging
 	gtag('event', 'navigation_link', {
-		'screen': 'Selected Works'
+		'event_category': 'engagement',
+		'event_label': 'Selected Works'
 	});
 });
 
