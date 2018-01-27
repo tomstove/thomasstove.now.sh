@@ -10,6 +10,12 @@ section, footer {
   margin: 0 auto;
 }
 
+#intro {
+  background-image: url('/images/background_bw.jpg');
+  background-size: cover;
+  color: var(--oc-white);
+}
+
 #intro .gridContainer {
   display: grid;
   max-width: 960px;
@@ -57,7 +63,7 @@ section, footer {
 #contact .gridContainer {
   display: grid;
   max-width: 960px;
-  min-height: 500px;
+  min-height: auto;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 15rem 1fr 1fr;
   grid-column-gap: 5px;
@@ -210,6 +216,10 @@ footer .footerLogo img {
   footer .gridContainer {
     max-width: 85vw;
   }
+
+  #services .heading, #contact .heading {
+    padding-bottom: 2rem;
+  }
 }
 
 @media (max-width: 550px) {
@@ -236,7 +246,7 @@ footer .footerLogo img {
   }
 
   #contact .leftContent {
-    padding-top: 8rem;
+    padding-top: 2rem;
   }
 
   #contact .rightContent {

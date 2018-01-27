@@ -34,7 +34,7 @@ document.getElementById('selectedWorks').addEventListener('click', function(e) {
 	showSheet('selectedWorksSheet');
 	// GTAG.js event logging
 	gtag('event', 'navigation_link', {
-		'event_category': 'engagement',
+		'event_category': 'Engagement',
 		'event_label': 'Selected Works'
 	});
 });
@@ -45,7 +45,8 @@ document.getElementById('sketchbook').addEventListener('click', function(e) {
 	showSheet('sketchbookSheet');
 	// GTAG.js event logging
 	gtag('event', 'navigation_link', {
-		'screen': 'Sketchbook'
+		'event_category': 'Engagement',
+		'event_label': 'Sketchbook'
 	});
 });
 
@@ -55,7 +56,8 @@ document.getElementById('bio').addEventListener('click', function(e) {
 	showSheet('bioSheet');
 	// GTAG.js event logging
 	gtag('event', 'navigation_link', {
-		'screen': 'Biography'
+		'event_category': 'Engagement',
+		'event_label': 'Biography'
 	});
 });
 
@@ -88,18 +90,21 @@ document.getElementById('overlay').addEventListener('click', function(e) {
 // GTAG.js event logging
 document.getElementById('email').addEventListener('click', function(e) {
 	gtag('event', 'external_link', {
-		'target': 'Email'
+		'event_category': 'Engagement',
+		'event_label': 'Email'
 	});
 });
 
 document.getElementById('facebook').addEventListener('click', function(e) {
 	gtag('event', 'external_link', {
-		'target': 'Facebook'
+		'event_category': 'Engagement',
+		'event_label': 'Facebook'
 	});
 });
 
 document.getElementById('instagram').addEventListener('click', function(e) {
 	gtag('event', 'external_link', {
-		'target': 'Instagram'
+		'event_category': 'Engagement',
+		'event_label': 'Instagram'
 	});
 });
